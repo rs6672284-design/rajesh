@@ -1,3 +1,4 @@
+html
 <!doctype html>
 <html lang="en">
 <head>
@@ -60,17 +61,26 @@ html,body{
   padding:27px 18px 23px
 }
 
-.logo{
-  width:72px;
-  height:72px;
+/* SMALL CIRCULAR LOGO */
+.profile{
+  width:55px;
+  height:55px;
   margin:0 auto 14px;
   border-radius:50%;
-  display:grid;
-  place-items:center;
+  overflow:hidden;
+  border:2px solid var(--gold);
   background:#241f13;
-  border:1px solid #62532e;
-  color:var(--gold2);
-  font-size:28px
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.profile img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  border-radius:50%;
 }
 
 .eyebrow{
@@ -219,6 +229,11 @@ footer{
   h1{
     font-size:25px
   }
+
+  .profile{
+    width:50px;
+    height:50px
+  }
 }
 </style>
 
@@ -236,15 +251,12 @@ footer{
 
 <div class="hero">
 
- <!-- Profile -->
-
-    <div class="profile">
-
-        <img
-        src="https://i.ibb.co/kspWv9ZH/Play-boy-8.jpg"alt="Logo">
-
-    </div>
-
+<!-- Small Circular Profile Logo -->
+<div class="profile">
+  <img
+    src="https://i.ibb.co/kspWv9ZH/Play-boy-8.jpg"
+    alt="Play Boy Logo">
+</div>
 
 <div class="eyebrow">
   PRIVATE SOCIAL EXPERIENCE
